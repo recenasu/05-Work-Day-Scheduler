@@ -65,12 +65,14 @@ $("#seventeen-text").val(seventeen);
 $(function () {
 
 
-  // Using dayjs to get the date and display it in the element id currentDay/
+  // Use dayjs to get the date and display it in the element id currentDay/
   var today = dayjs();
   $("#currentDay").text(today.format("dddd, MMMM D YYYY, h:mm:ss a"));
 
+  // Use dayjs to get the current hour for use in the conditional statements below
+  var thisHour = dayjs().hour();
+  
   // Create variables for each hour block to use in the conditional statements below 
-  var thisHour = 12;
   var nineAM = 9;
   var tenAM = 10;
   var elevenAM = 11;
