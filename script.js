@@ -1,13 +1,13 @@
 // Create variables for all of the time block elements using their id
-var nineEl = $("#hour-9")
-var tenEl = $("#hour-10")
-var elevenEl = $("#hour-11")
-var twelveEl = $("#hour-12")
-var thirteenEl = $("#hour-13")
-var fourteenEl = $("#hour-14")
-var fifteenEl = $("#hour-15")
-var sixteenEl = $("#hour-16")
-var seventeenEl = $("#hour-17")
+var nineEl = $("#hour-9");
+var tenEl = $("#hour-10");
+var elevenEl = $("#hour-11");
+var twelveEl = $("#hour-12");
+var thirteenEl = $("#hour-13");
+var fourteenEl = $("#hour-14");
+var fifteenEl = $("#hour-15");
+var sixteenEl = $("#hour-16");
+var seventeenEl = $("#hour-17");
 
 
 //  Pull previously saved values for each time block from local storage.
@@ -47,7 +47,7 @@ if (localStorage.getItem("seventeenEntry") !== null) {
   var seventeen = localStorage.getItem("seventeenEntry");
 }
 
-// Populate schedule time blocks with previously saved entries from local storage, if present
+// Populate schedule time blocks with previously saved entries from local storage.
 $("#nine-text").val(nine);
 $("#ten-text").val(ten);
 $("#eleven-text").val(eleven);
@@ -71,7 +71,7 @@ $(function () {
 
   // Use dayjs to get the current hour for use in the conditional statements below
   var thisHour = dayjs().hour();
-  
+
   // Create variables for each hour block to use in the conditional statements below 
   var nineAM = 9;
   var tenAM = 10;
@@ -157,7 +157,7 @@ $(function () {
     seventeenEl.attr('class', 'row time-block future mb-4');
   };
 
-// Save button listeners. Upon clicking the save button, the value in the time block is displayed in the console and saved to local storage.
+  // Save button listeners. Upon clicking the save button, the value in the time block is displayed in the console and saved to local storage.
   $("#nine-button").click(function () {
     var nineEntry = $("#nine-text").val();
     console.log(nineEntry);
@@ -167,49 +167,49 @@ $(function () {
   $("#ten-button").click(function () {
     var tenEntry = $("#ten-text").val();
     console.log(tenEntry);
-    localStorage.setItem("tenEntry", tenEntry)
+    localStorage.setItem("tenEntry", tenEntry);
   })
 
   $("#eleven-button").click(function () {
     var elevenEntry = $("#eleven-text").val();
     console.log(elevenEntry);
-    localStorage.setItem("elevenEntry", elevenEntry)
+    localStorage.setItem("elevenEntry", elevenEntry);
   })
 
   $("#twelve-button").click(function () {
     var twelveEntry = $("#twelve-text").val();
     console.log(twelveEntry);
-    localStorage.setItem("twelveEntry", twelveEntry)
+    localStorage.setItem("twelveEntry", twelveEntry);
   })
 
   $("#thirteen-button").click(function () {
     var thirteenEntry = $("#thirteen-text").val();
     console.log(thirteenEntry);
-    localStorage.setItem("thirteenEntry", thirteenEntry)
+    localStorage.setItem("thirteenEntry", thirteenEntry);
   })
 
   $("#fourteen-button").click(function () {
     var fourteenEntry = $("#fourteen-text").val();
     console.log(fourteenEntry);
-    localStorage.setItem("fourteenEntry", fourteenEntry)
+    localStorage.setItem("fourteenEntry", fourteenEntry);
   })
 
   $("#fifteen-button").click(function () {
     var fifteenEntry = $("#fifteen-text").val();
     console.log(fifteenEntry);
-    localStorage.setItem("fifteenEntry", fifteenEntry)
+    localStorage.setItem("fifteenEntry", fifteenEntry);
   })
 
   $("#sixteen-button").click(function () {
     var sixteenEntry = $("#sixteen-text").val();
     console.log(sixteenEntry);
-    localStorage.setItem("sixteenEntry", sixteenEntry)
+    localStorage.setItem("sixteenEntry", sixteenEntry);
   })
 
   $("#seventeen-button").click(function () {
     var seventeenEntry = $("#seventeen-text").val();
     console.log(seventeenEntry);
-    localStorage.setItem("seventeenEntry", seventeenEntry)
+    localStorage.setItem("seventeenEntry", seventeenEntry);
   })
 
 
