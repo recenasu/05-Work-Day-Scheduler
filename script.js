@@ -37,45 +37,91 @@ $(function () {
 
 
   // var thisHour = dayjs().hour();
-  var thisHour = 3
-  console.log(thisHour);
+  var thisHour = 12;
   var nineAM = 9;
   var tenAM = 10;
   var elevenAM = 11;
-  var twelveAM = 12;
-  console.log(nineAM);
-  console.log(twelveAM);
-  
-  if (thisHour > nineAM) {
+  var twelvePM = 12;
+  var thirteenPM = 13;
+  var fourteenPM = 14;
+  var fifteenPM = 15;
+  var sixteenPM = 16;
+  var seventeenPM = 17;
+
+  //Conditional statements for the time blocks 
+  if (nineAM < thisHour) {
     nineEl.attr('class', 'row time-block past');
-  } else if (thisHour = nineAM) {
+  } else if (nineAM === thisHour) {
     nineEl.attr('class', 'row time-block present');
-  } else if (thisHour < nineAM){
+  } else if (nineAM > thisHour) {
     nineEl.attr('class', 'row time-block future');
   };
 
-  if (thisHour > tenAM) {
+  if (tenAM < thisHour) {
     tenEl.attr('class', 'row time-block past');
-  } else if (thisHour = tenAM) {
+  } else if (tenAM === thisHour) {
     tenEl.attr('class', 'row time-block present');
-  } else if (thisHour < tenAM){
+  } else if (tenAM > thisHour) {
     tenEl.attr('class', 'row time-block future');
   };
 
-  if (thisHour > elevenAM) {
+  if (elevenAM < thisHour) {
     elevenEl.attr('class', 'row time-block past');
-  } else if (thisHour = elevenAM) {
+  } else if (elevenAM === thisHour) {
     elevenEl.attr('class', 'row time-block present');
-  } else if (thisHour < elevenAM){
+  } else if (elevenAM > thisHour) {
     elevenEl.attr('class', 'row time-block future');
   };
 
-  if (thisHour > twelveAM) {
+  if (twelvePM < thisHour) {
     twelveEl.attr('class', 'row time-block past');
-  } else if (thisHour = twelveAM) {
+  } else if (twelvePM === thisHour) {
     twelveEl.attr('class', 'row time-block present');
-  } else if (thisHour < twelveAM){
+  } else if (twelvePM > thisHour) {
     twelveEl.attr('class', 'row time-block future');
   };
 
+  if (thirteenPM < thisHour) {
+    thirteenEl.attr('class', 'row time-block past');
+  } else if (thirteenPM === thisHour) {
+    thirteenEl.attr('class', 'row time-block present');
+  } else if (thirteenPM > thisHour) {
+    thirteenEl.attr('class', 'row time-block future');
+  };
+
+  if (fourteenPM < thisHour) {
+    fourteenEl.attr('class', 'row time-block past');
+  } else if (fourteenPM === thisHour) {
+    fourteenEl.attr('class', 'row time-block present');
+  } else if (fourteenPM > thisHour) {
+    fourteenEl.attr('class', 'row time-block future');
+  };
+
+  if (fifteenPM < thisHour) {
+    fifteenEl.attr('class', 'row time-block past');
+  } else if (fifteenPM === thisHour) {
+    fifteenEl.attr('class', 'row time-block present');
+  } else if (fifteenPM > thisHour) {
+    fifteenEl.attr('class', 'row time-block future');
+  };
+
+  if (sixteenPM < thisHour) {
+    sixteenEl.attr('class', 'row time-block past');
+  } else if (sixteenPM === thisHour) {
+    sixteenEl.attr('class', 'row time-block present');
+  } else if (sixteenPM > thisHour) {
+    sixteenEl.attr('class', 'row time-block future');
+  };
+
+  // Last time block contains an additional bottom margin (mb) style for better reading
+  if (seventeenPM < thisHour) {
+    seventeenEl.attr('class', 'row time-block past mb-4');
+  } else if (seventeenPM === thisHour) {
+    seventeenEl.attr('class', 'row time-block present mb-4');
+  } else if (seventeenPM > thisHour) {
+    seventeenEl.attr('class', 'row time-block future mb-4');
+  };
+
 });
+
+// use data- in the html for the time elements to grab data from the element for the time storage. maybe
