@@ -54,25 +54,16 @@ SO THAT I can manage my time effectively
 
 The following images show the application sequence.
 
-![Initial page with Start Quiz button](./assets/imgs/quiz1.png)
+![Initial page with Date/Time displayed](./imgs/Planner1.png)
 
 
-![Question with countdown timer](./assets/imgs/quiz2.png)
+![Scrolled Down View](./imgs/Planner2.png)
 
-![Incorrect response](./assets/imgs/quiz3.png)
+![Data Entry](./imgs/Planner3.png)
 
 
-![Correct response](./assets/imgs/quiz4.png)
+![Data Stored in Local Storage](./imgs/Planner4.png)
 
-![Timer < 10 seconds](./assets/imgs/quiz4a.png)
-
-![Final Score and Initials entry box](./assets/imgs/quiz5.png)
-
-![No text entered response](./assets/imgs/quiz5a.png)
-
-![Initials entered in entry box](./assets/imgs/quiz6.png)
-
-![Last 3 scores displayed](./assets/imgs/quiz7.png)
 
 ## Credits
 
